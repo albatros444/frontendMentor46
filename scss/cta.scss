@@ -1,0 +1,32 @@
+.cta {
+  padding: 300px 0 200px;
+  background: top / contain url(/images/bg-section-bottom-desktop-2.svg)
+      no-repeat,
+    bottom/contain url(/images/bg-footer-top-desktop.svg) no-repeat;
+  h2 {
+    margin-bottom: 40px;
+    font-family: $poppins;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto 90px;
+    padding: 0;
+    width: 400px;
+    height: 76px;
+    border-radius: 76px;
+    border: none;
+    outline: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: $pink;
+    box-shadow: 0 5px 10px hsl(322, 50%, 76%);
+  }
+}

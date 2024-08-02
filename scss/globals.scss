@@ -21,14 +21,16 @@ body {
   p {
     margin-top: 0;
     margin-bottom: 0;
+    color: hsl(192, 100%, 9%);
   }
   font-family: "Open Sans", sans-serif;
 
-  /* //position: relative; ///for footer with absolute position --> */
+  position: relative; ///for footer with absolute position --> */
 }
 textarea,
 input {
   outline: none;
+  border: none;
   font-family: inherit;
 }
 a {

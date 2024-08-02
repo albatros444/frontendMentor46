@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px;
+  margin-bottom: 80px;
+  img {
+    height: 35px;
+  }
+  button {
+    display: inline-block;
+    padding: 0;
+    width: 135px;
+    height: 38px;
+    border: 1px solid $pink;
+    border-radius: 30px;
+    outline: inherit;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+    color: $pink;
+    background: none;
+    box-shadow: 0 0 3px hsl(321, 100%, 88%); ///custom
+  }
+}
