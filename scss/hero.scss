@@ -1,4 +1,6 @@
 .hero {
+  background: bottom / contain url(/images/bg-section-top-desktop-1.svg)
+    no-repeat;
   h1 {
     margin-bottom: 25px;
     font-family: $poppins;
@@ -39,8 +41,6 @@
     display: flex;
     justify-content: space-around;
     padding-bottom: 290px;
-    background: bottom / contain url(/images/bg-section-top-desktop-1.svg)
-      no-repeat;
     div {
       p:nth-child(2) {
         font-size: 100px;

@@ -1,9 +1,8 @@
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 100px 120px 00px;
+  padding: 100px 120px 0px;
   background-color: $vdCyan;
-
   p {
     color: $vpBlue;
   }
@@ -109,32 +108,34 @@ footer {
       letter-spacing: 0.01em;
       line-height: 1.7;
     }
-    input {
-      width: 319px;
-      height: 50px;
-      border-radius: 7px;
-      padding-left: 15px;
-      margin-right: 40px;
-      font-size: 14px;
-      font-weight: 500;
-      color: $vdCyan;
-    }
-    button {
-      display: inline-block;
-      padding: 0;
-      width: 160px;
-      height: 50px;
-      border: none;
-      border-radius: 7px;
-      outline: inherit;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 700;
-      font-family: inherit;
-      text-align: center;
-      text-decoration: none;
-      color: $white;
-      background: $pink;
+    .email {
+      input {
+        width: 319px;
+        height: 50px;
+        border-radius: 7px;
+        padding-left: 15px;
+        margin-right: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $vdCyan;
+      }
+      button {
+        display: inline-block;
+        padding: 0;
+        width: 160px;
+        height: 50px;
+        border: none;
+        border-radius: 7px;
+        outline: inherit;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: inherit;
+        text-align: center;
+        text-decoration: none;
+        color: $white;
+        background: $pink;
+      }
     }
   }
 }

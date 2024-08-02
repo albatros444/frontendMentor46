@@ -1,6 +1,4 @@
 .features {
-  //   background: bottom / contain url(/images/bg-section-bottom-desktop-1.svg)
-  // no-repeat;
   .feature {
     display: flex;
     justify-content: space-between;
@@ -44,8 +42,7 @@
     }
   }
   .yourUsers {
-    background: bottom / contain url(/images/bg-section-top-desktop-1.svg)
-      no-repeat $vpBlue;
+    background: $vpBlue;
     &__left {
       flex-shrink: 0;
       width: 50%;

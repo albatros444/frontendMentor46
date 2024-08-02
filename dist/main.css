@@ -88,6 +88,9 @@ header button {
   box-shadow: 0 0 3px hsl(321, 100%, 88%);
 }
 
+.hero {
+  background: bottom/contain url(/images/bg-section-top-desktop-1.svg) no-repeat;
+}
 .hero h1 {
   margin-bottom: 25px;
   font-family: "Poppins", sans-serif;
@@ -128,7 +131,6 @@ header button {
   display: flex;
   justify-content: space-around;
   padding-bottom: 290px;
-  background: bottom/contain url(/images/bg-section-top-desktop-1.svg) no-repeat;
 }
 .hero .statistics div p:nth-child(2) {
   font-size: 100px;
@@ -190,7 +192,7 @@ header button {
   margin-top: 100px;
 }
 .features .yourUsers {
-  background: bottom/contain url(/images/bg-section-top-desktop-1.svg) no-repeat hsl(207, 100%, 98%);
+  background: hsl(207, 100%, 98%);
 }
 .features .yourUsers__left {
   flex-shrink: 0;
@@ -337,7 +339,7 @@ footer .footerRight p {
   letter-spacing: 0.01em;
   line-height: 1.7;
 }
-footer .footerRight input {
+footer .footerRight .email input {
   width: 319px;
   height: 50px;
   border-radius: 7px;
@@ -347,7 +349,7 @@ footer .footerRight input {
   font-weight: 500;
   color: hsl(192, 100%, 9%);
 }
-footer .footerRight button {
+footer .footerRight .email button {
   display: inline-block;
   padding: 0;
   width: 160px;
@@ -363,6 +365,186 @@ footer .footerRight button {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   background: hsl(322, 100%, 66%);
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 25px;
+  }
+  header img {
+    height: 17px;
+  }
+  header button {
+    width: 90px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .hero {
+    padding: 35px;
+    background: bottom/contain url(/images/bg-section-top-mobile-1.svg) no-repeat;
+  }
+  .hero h1 {
+    font-size: 25px;
+  }
+  .hero .heroText {
+    width: auto;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .hero button {
+    width: 70%;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .hero .heroImg {
+    width: 100%;
+  }
+  .hero .statistics {
+    display: block;
+    width: 167px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    background: none;
+  }
+  .hero .statistics div p:nth-child(2) {
+    font-size: 65px;
+    text-align: center;
+  }
+  .hero .statistics div p:nth-child(3) {
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero .statistics__right {
+    padding-right: 0;
+  }
+  .hero .statistics__right img {
+    height: 20px;
+  }
+  .hero .statistics__left {
+    padding-left: 0;
+    margin-bottom: 80px;
+  }
+  .hero .statistics__left img {
+    height: 25px;
+  }
+  .features .feature {
+    flex-direction: column;
+  }
+  .features .feature h2 {
+    font-size: 18px;
+  }
+  .features .feature p {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .features .growTogether__left {
+    order: 2;
+    margin-top: 0px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .features .growTogether__right {
+    padding: 50px;
+  }
+  .features .flowingConversations {
+    background: top/contain url(/images/bg-section-bottom-mobile-1.svg) no-repeat, bottom/contain url(/images/bg-section-top-mobile-2.svg) no-repeat;
+  }
+  .features .flowingConversations__left {
+    padding: 50px;
+  }
+  .features .flowingConversations__right {
+    margin-top: 0px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .features .yourUsers__left {
+    order: 2;
+    padding: 0;
+    margin-top: 0px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .features .yourUsers__right {
+    padding: 50px;
+  }
+  .cta {
+    padding: 200px 0 200px;
+    background: top/contain url(/images/bg-section-bottom-mobile-2.svg) no-repeat, bottom/contain url(/images/bg-footer-top-mobile.svg) no-repeat;
+  }
+  .cta h2 {
+    font-size: 24px;
+  }
+  .cta button {
+    width: 60%;
+    height: 45px;
+    font-size: 12px;
+  }
+  footer {
+    padding: 100px 30px 0px;
+    flex-direction: column;
+  }
+  footer .footerLeft {
+    order: 2;
+    width: 100%;
+  }
+  footer .footerLeft img {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  footer .footerLeft .description {
+    margin-bottom: 35px;
+  }
+  footer .footerLeft .phone {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+  }
+  footer .footerLeft .email {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  footer .footerLeft .socialLinks {
+    width: 100px;
+  }
+  footer .footerLeft .socialLinks .linkBox {
+    width: 24px;
+    height: 24px;
+  }
+  footer .footerLeft .socialLinks .linkBox svg {
+    width: 15px;
+    height: 15px;
+  }
+  footer .footerRight {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 90px;
+  }
+  footer .footerRight h2 {
+    font-size: 20px;
+  }
+  footer .footerRight p {
+    width: 100%;
+    font-size: 13px;
+  }
+  footer .footerRight .email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  footer .footerRight .email input {
+    display: block;
+    width: 100%;
+    height: 44px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  footer .footerRight .email button {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
