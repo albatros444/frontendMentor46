@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 100px 120px 0px;
+  padding: 120px 100px 100px 120px;
   background-color: $vdCyan;
   p {
     color: $vpBlue;
@@ -9,11 +9,11 @@ footer {
   .footerLeft {
     width: 50%;
     img {
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
     .description {
       width: 305px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 13px;
       font-weight: 600;
       letter-spacing: 0.03em;
@@ -95,7 +95,7 @@ footer {
   }
   .footerRight {
     width: 50%;
-    padding-left: 60px;
+    padding-left: 70px;
     h2 {
       color: $vpBlue;
       text-transform: uppercase;
@@ -114,7 +114,7 @@ footer {
         height: 50px;
         border-radius: 7px;
         padding-left: 15px;
-        margin-right: 40px;
+        margin-right: 35px;
         font-size: 14px;
         font-weight: 500;
         color: $vdCyan;

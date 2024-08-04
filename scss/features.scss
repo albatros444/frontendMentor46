@@ -8,7 +8,8 @@
       margin-bottom: 20px;
     }
     p {
-      width: 495px;
+      width: 525px;
+      line-height: 1.6;
     }
     img {
       width: 100%;
@@ -19,25 +20,29 @@
     &__left {
       flex-shrink: 0;
       width: 50%;
-      padding: 130px;
-      margin-top: 100px;
+      padding: 220px 130px 140px;
+      padding-right: 80px;
     }
     &__right {
-      padding: 110px;
+      padding: 70px 130px 40px 110px;
+      padding-left: 60px;
     }
   }
   .flowingConversations {
-    padding: 70px 0px 150px;
+    padding: 240px 0px 150px;
     background: top / contain url(/images/bg-section-bottom-desktop-1.svg)
         no-repeat,
       bottom / contain url(/images/bg-section-top-desktop-2.svg) no-repeat;
     &__left {
-      padding: 110px;
+      padding: 110px 100px 110px 130px;
+      padding-right: 60px;
     }
     &__right {
       flex-shrink: 0;
       width: 50%;
       padding: 130px;
+      padding-left: 80px;
+      // padding-right: 100px;
       margin-top: 100px;
     }
   }
@@ -46,11 +51,11 @@
     &__left {
       flex-shrink: 0;
       width: 50%;
-      padding: 130px;
-      margin-top: 100px;
+      padding: 110px;
+      margin-top: 30px;
     }
     &__right {
-      padding: 110px;
+      padding: 40px 130px 30px 60px;
     }
   }
 }

@@ -1,21 +1,22 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 75px;
-  margin-bottom: 80px;
+  padding: 77px;
+  margin-bottom: 155px;
   img {
-    height: 35px;
+    height: 39px;
   }
   button {
     display: inline-block;
     padding: 0;
     width: 135px;
-    height: 38px;
+    height: 40px;
+    margin-right: -10px;
     border: 1px solid $pink;
     border-radius: 30px;
     outline: inherit;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 16px;
     font-family: inherit;
     text-align: center;
     text-decoration: none;

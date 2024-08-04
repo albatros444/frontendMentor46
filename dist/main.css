@@ -64,22 +64,23 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 75px;
-  margin-bottom: 80px;
+  padding: 77px;
+  margin-bottom: 155px;
 }
 header img {
-  height: 35px;
+  height: 39px;
 }
 header button {
   display: inline-block;
   padding: 0;
   width: 135px;
-  height: 38px;
+  height: 40px;
+  margin-right: -10px;
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 30px;
   outline: inherit;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 16px;
   font-family: inherit;
   text-align: center;
   text-decoration: none;
@@ -92,7 +93,7 @@ header button {
   background: bottom/contain url(/images/bg-section-top-desktop-1.svg) no-repeat;
 }
 .hero h1 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -100,16 +101,17 @@ header button {
 }
 .hero .heroText {
   width: 595px;
-  margin: 0 auto 50px;
+  margin: 0 auto 45px;
   text-align: center;
   font-size: 20px;
+  line-height: 1.55;
 }
 .hero button {
   display: block;
-  margin: 0 auto 90px;
+  margin: 0 auto 110px;
   padding: 0;
   width: 400px;
-  height: 76px;
+  height: 80px;
   border-radius: 76px;
   border: none;
   outline: inherit;
@@ -117,6 +119,7 @@ header button {
   font-family: inherit;
   font-size: 20px;
   font-weight: 600;
+  letter-spacing: 0.01em;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -125,6 +128,7 @@ header button {
 }
 .hero .heroImg {
   display: block;
+  width: 72%;
   margin: 0 auto 120px;
 }
 .hero .statistics {
@@ -132,9 +136,14 @@ header button {
   justify-content: space-around;
   padding-bottom: 290px;
 }
+.hero .statistics div img {
+  padding-left: 10px;
+  margin-bottom: -5px;
+}
 .hero .statistics div p:nth-child(2) {
-  font-size: 100px;
+  font-size: 95px;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 .hero .statistics div p:nth-child(3) {
   font-size: 24px;
@@ -142,13 +151,16 @@ header button {
   color: hsl(192, 10%, 50%);
 }
 .hero .statistics__right {
-  padding-right: 90px;
+  padding-right: 100px;
 }
 .hero .statistics__right img {
-  height: 35px;
+  height: 33px;
+}
+.hero .statistics__right p:nth-child(3) {
+  padding-right: 30px;
 }
 .hero .statistics__left {
-  padding-left: 90px;
+  padding-left: 100px;
 }
 
 .features .feature {
@@ -161,7 +173,8 @@ header button {
   margin-bottom: 20px;
 }
 .features .feature p {
-  width: 495px;
+  width: 525px;
+  line-height: 1.6;
 }
 .features .feature img {
   width: 100%;
@@ -172,23 +185,26 @@ header button {
 .features .growTogether__left {
   flex-shrink: 0;
   width: 50%;
-  padding: 130px;
-  margin-top: 100px;
+  padding: 220px 130px 140px;
+  padding-right: 80px;
 }
 .features .growTogether__right {
-  padding: 110px;
+  padding: 70px 130px 40px 110px;
+  padding-left: 60px;
 }
 .features .flowingConversations {
-  padding: 70px 0px 150px;
+  padding: 240px 0px 150px;
   background: top/contain url(/images/bg-section-bottom-desktop-1.svg) no-repeat, bottom/contain url(/images/bg-section-top-desktop-2.svg) no-repeat;
 }
 .features .flowingConversations__left {
-  padding: 110px;
+  padding: 110px 100px 110px 130px;
+  padding-right: 60px;
 }
 .features .flowingConversations__right {
   flex-shrink: 0;
   width: 50%;
   padding: 130px;
+  padding-left: 80px;
   margin-top: 100px;
 }
 .features .yourUsers {
@@ -197,15 +213,15 @@ header button {
 .features .yourUsers__left {
   flex-shrink: 0;
   width: 50%;
-  padding: 130px;
-  margin-top: 100px;
+  padding: 110px;
+  margin-top: 30px;
 }
 .features .yourUsers__right {
-  padding: 110px;
+  padding: 40px 130px 30px 60px;
 }
 
 .cta {
-  padding: 300px 0 200px;
+  padding: 300px 0 250px;
   background: top/contain url(/images/bg-section-bottom-desktop-2.svg) no-repeat, bottom/contain url(/images/bg-footer-top-desktop.svg) no-repeat;
 }
 .cta h2 {
@@ -219,8 +235,8 @@ header button {
   margin: 0 auto 90px;
   padding: 0;
   width: 400px;
-  height: 76px;
-  border-radius: 76px;
+  height: 80px;
+  border-radius: 80px;
   border: none;
   outline: inherit;
   cursor: pointer;
@@ -237,7 +253,7 @@ header button {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 100px 120px 0px;
+  padding: 120px 100px 100px 120px;
   background-color: hsl(192, 100%, 9%);
 }
 footer p {
@@ -247,11 +263,11 @@ footer .footerLeft {
   width: 50%;
 }
 footer .footerLeft img {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 footer .footerLeft .description {
   width: 305px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -325,7 +341,7 @@ footer .footerLeft .socialLinks .facebookBox .facebookSVG {
 }
 footer .footerRight {
   width: 50%;
-  padding-left: 60px;
+  padding-left: 70px;
 }
 footer .footerRight h2 {
   color: hsl(207, 100%, 98%);
@@ -344,7 +360,7 @@ footer .footerRight .email input {
   height: 50px;
   border-radius: 7px;
   padding-left: 15px;
-  margin-right: 40px;
+  margin-right: 35px;
   font-size: 14px;
   font-weight: 500;
   color: hsl(192, 100%, 9%);
@@ -441,7 +457,6 @@ footer .footerRight .email button {
   }
   .features .growTogether__left {
     order: 2;
-    margin-top: 0px;
     padding: 30px;
     width: 100%;
     text-align: center;
