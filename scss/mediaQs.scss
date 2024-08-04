@@ -1,30 +1,36 @@
 @media screen and (max-width: 600px) {
   header {
-    padding: 25px;
+    align-items: center;
+    padding: 25px 25px;
+    margin-bottom: 55px;
     img {
-      height: 17px;
+      height: 16px;
     }
     button {
-      width: 90px;
-      height: 25px;
+      width: 80px;
+      height: 23px;
+      margin-right: 0;
+      padding-bottom: 1px;
       font-size: 10px;
     }
   }
   .hero {
-    padding: 35px;
+    padding: 37px;
     background: bottom / contain url(/images/bg-section-top-mobile-1.svg)
       no-repeat;
     h1 {
-      font-size: 25px;
+      font-size: 24px;
     }
     .heroText {
       width: auto;
       font-size: 14px;
       font-weight: 500;
+      line-height: 1.55;
     }
     button {
-      width: 70%;
+      width: 66%;
       height: 40px;
+      margin-bottom: 100px;
       font-size: 12px;
       font-weight: 600;
     }
@@ -34,30 +40,49 @@
     .statistics {
       display: block;
       width: 167px;
-      padding-bottom: 100px;
+      padding-bottom: 80px;
       margin: 0 auto;
       background: none;
       div {
+        img {
+          padding-left: 5px;
+        }
         p:nth-child(2) {
-          font-size: 65px;
+          font-size: 62px;
           text-align: center;
         }
         p:nth-child(3) {
-          font-size: 16px;
+          margin-top: -5px;
+          font-size: 15px;
           text-align: center;
         }
       }
-      &__right {
+      .statistics__right {
         padding-right: 0;
         img {
-          height: 20px;
+          height: 19px;
+          margin-left: 3px;
+        }
+        p:nth-child(2) {
+          font-size: 54px;
+          text-align: left;
+          margin-left: 4px;
+        }
+        p:nth-child(3) {
+          font-size: 13px;
+          margin: -7px auto 0;
+          padding-right: 10px;
+          width: 76px;
         }
       }
       &__left {
         padding-left: 0;
-        margin-bottom: 80px;
+        margin-bottom: 95px;
         img {
           height: 25px;
+        }
+        p:nth-child(2) {
+          font-size: 47px;
         }
       }
     }
@@ -66,17 +91,20 @@
     .feature {
       flex-direction: column;
       h2 {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 10px;
       }
       p {
         width: 100%;
-        font-size: 13px;
+        font-size: 14px;
+        letter-spacing: -0.01em;
         font-weight: 500;
       }
       img {
       }
     }
     .growTogether {
+      padding-bottom: 25px;
       &__left {
         order: 2;
         padding: 30px;
@@ -84,15 +112,16 @@
         text-align: center;
       }
       &__right {
-        padding: 50px;
+        padding: 90px 60px 40px;
       }
     }
     .flowingConversations {
+      padding: 140px 0px 190px;
       background: top / contain url(/images/bg-section-bottom-mobile-1.svg)
           no-repeat,
         bottom / contain url(/images/bg-section-top-mobile-2.svg) no-repeat;
       &__left {
-        padding: 50px;
+        padding: 50px 55px;
       }
       &__right {
         margin-top: 0px;
@@ -106,17 +135,17 @@
         order: 2;
         padding: 0;
         margin-top: 0px;
-        padding: 30px;
+        padding: 30px 30px 115px;
         width: 100%;
         text-align: center;
       }
       &__right {
-        padding: 50px;
+        padding: 20px 55px 50px;
       }
     }
   }
   .cta {
-    padding: 200px 0 200px;
+    padding: 170px 0 210px;
     background: top / contain url(/images/bg-section-bottom-mobile-2.svg)
         no-repeat,
       bottom/contain url(/images/bg-footer-top-mobile.svg) no-repeat;
@@ -124,40 +153,61 @@
       font-size: 24px;
     }
     button {
-      width: 60%;
-      height: 45px;
+      width: 53%;
+      height: 40px;
       font-size: 12px;
     }
   }
   footer {
-    padding: 100px 30px 0px;
+    padding: 60px 27px 0px;
     flex-direction: column;
     .footerLeft {
       order: 2;
       width: 100%;
+      margin-bottom: 45px;
       img {
-        height: 30px;
+        height: 32px;
         margin-bottom: 10px;
       }
       .description {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
+        line-height: 1.8;
       }
       .phone {
         font-size: 13px;
         font-family: $poppins;
+        padding-left: 40px;
+        margin-bottom: 20px;
+        letter-spacing: 0.04em;
+        &::before {
+          left: 2px;
+          top: 1px;
+        }
       }
       .email {
-        font-size: 13px;
-        margin-bottom: 40px;
+        font-size: 14px;
+        margin-bottom: 50px;
+        padding-left: 40px;
+        &::before {
+          left: 2px;
+          top: 1px;
+        }
       }
       .socialLinks {
-        width: 100px;
+        width: 105px;
         .linkBox {
-          width: 24px;
-          height: 24px;
+          width: 23px;
+          height: 23px;
           svg {
             width: 15px;
             height: 15px;
+          }
+        }
+        .facebookBox {
+          padding-left: 6px;
+          svg {
+            width: 100%;
+            height: 100%;
           }
         }
       }
@@ -165,14 +215,17 @@
     .footerRight {
       width: 100%;
       padding-left: 0;
-      margin-bottom: 90px;
+      margin-bottom: 100px;
 
       h2 {
         font-size: 20px;
+        margin-bottom: 17px;
       }
       p {
         width: 100%;
-        font-size: 13px;
+        font-size: 14px;
+        padding-right: 10px;
+        margin-bottom: 35px;
       }
       .email {
         display: flex;
@@ -181,7 +234,7 @@
         input {
           display: block;
           width: 100%;
-          height: 44px;
+          height: 46px;
 
           margin-right: 0px;
           margin-bottom: 15px;

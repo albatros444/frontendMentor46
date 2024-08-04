@@ -56,6 +56,7 @@ ul {
   margin: auto;
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -124,7 +125,7 @@ header button {
   text-decoration: none;
   color: white;
   background: hsl(322, 100%, 66%);
-  box-shadow: 0 5px 10px hsl(322, 50%, 76%);
+  box-shadow: 0 5px 10px hsla(322, 50%, 76%, 0.5);
 }
 .hero .heroImg {
   display: block;
@@ -134,6 +135,7 @@ header button {
 .hero .statistics {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   padding-bottom: 290px;
 }
 .hero .statistics div img {
@@ -175,6 +177,7 @@ header button {
 .features .feature p {
   width: 525px;
   line-height: 1.6;
+  font-weight: 500;
 }
 .features .feature img {
   width: 100%;
@@ -385,31 +388,37 @@ footer .footerRight .email button {
 
 @media screen and (max-width: 600px) {
   header {
-    padding: 25px;
+    align-items: center;
+    padding: 25px 25px;
+    margin-bottom: 55px;
   }
   header img {
-    height: 17px;
+    height: 16px;
   }
   header button {
-    width: 90px;
-    height: 25px;
+    width: 80px;
+    height: 23px;
+    margin-right: 0;
+    padding-bottom: 1px;
     font-size: 10px;
   }
   .hero {
-    padding: 35px;
+    padding: 37px;
     background: bottom/contain url(/images/bg-section-top-mobile-1.svg) no-repeat;
   }
   .hero h1 {
-    font-size: 25px;
+    font-size: 24px;
   }
   .hero .heroText {
     width: auto;
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.55;
   }
   .hero button {
-    width: 70%;
+    width: 66%;
     height: 40px;
+    margin-bottom: 100px;
     font-size: 12px;
     font-weight: 600;
   }
@@ -419,41 +428,65 @@ footer .footerRight .email button {
   .hero .statistics {
     display: block;
     width: 167px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     margin: 0 auto;
     background: none;
   }
+  .hero .statistics div img {
+    padding-left: 5px;
+  }
   .hero .statistics div p:nth-child(2) {
-    font-size: 65px;
+    font-size: 62px;
     text-align: center;
   }
   .hero .statistics div p:nth-child(3) {
-    font-size: 16px;
+    margin-top: -5px;
+    font-size: 15px;
     text-align: center;
   }
-  .hero .statistics__right {
+  .hero .statistics .statistics__right {
     padding-right: 0;
   }
-  .hero .statistics__right img {
-    height: 20px;
+  .hero .statistics .statistics__right img {
+    height: 19px;
+    margin-left: 3px;
+  }
+  .hero .statistics .statistics__right p:nth-child(2) {
+    font-size: 54px;
+    text-align: left;
+    margin-left: 4px;
+  }
+  .hero .statistics .statistics__right p:nth-child(3) {
+    font-size: 13px;
+    margin: -7px auto 0;
+    padding-right: 10px;
+    width: 76px;
   }
   .hero .statistics__left {
     padding-left: 0;
-    margin-bottom: 80px;
+    margin-bottom: 95px;
   }
   .hero .statistics__left img {
     height: 25px;
+  }
+  .hero .statistics__left p:nth-child(2) {
+    font-size: 47px;
   }
   .features .feature {
     flex-direction: column;
   }
   .features .feature h2 {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   .features .feature p {
     width: 100%;
-    font-size: 13px;
+    font-size: 14px;
+    letter-spacing: -0.01em;
     font-weight: 500;
+  }
+  .features .growTogether {
+    padding-bottom: 25px;
   }
   .features .growTogether__left {
     order: 2;
@@ -462,13 +495,14 @@ footer .footerRight .email button {
     text-align: center;
   }
   .features .growTogether__right {
-    padding: 50px;
+    padding: 90px 60px 40px;
   }
   .features .flowingConversations {
+    padding: 140px 0px 190px;
     background: top/contain url(/images/bg-section-bottom-mobile-1.svg) no-repeat, bottom/contain url(/images/bg-section-top-mobile-2.svg) no-repeat;
   }
   .features .flowingConversations__left {
-    padding: 50px;
+    padding: 50px 55px;
   }
   .features .flowingConversations__right {
     margin-top: 0px;
@@ -480,70 +514,94 @@ footer .footerRight .email button {
     order: 2;
     padding: 0;
     margin-top: 0px;
-    padding: 30px;
+    padding: 30px 30px 115px;
     width: 100%;
     text-align: center;
   }
   .features .yourUsers__right {
-    padding: 50px;
+    padding: 20px 55px 50px;
   }
   .cta {
-    padding: 200px 0 200px;
+    padding: 170px 0 210px;
     background: top/contain url(/images/bg-section-bottom-mobile-2.svg) no-repeat, bottom/contain url(/images/bg-footer-top-mobile.svg) no-repeat;
   }
   .cta h2 {
     font-size: 24px;
   }
   .cta button {
-    width: 60%;
-    height: 45px;
+    width: 53%;
+    height: 40px;
     font-size: 12px;
   }
   footer {
-    padding: 100px 30px 0px;
+    padding: 60px 27px 0px;
     flex-direction: column;
   }
   footer .footerLeft {
     order: 2;
     width: 100%;
+    margin-bottom: 45px;
   }
   footer .footerLeft img {
-    height: 30px;
+    height: 32px;
     margin-bottom: 10px;
   }
   footer .footerLeft .description {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    line-height: 1.8;
   }
   footer .footerLeft .phone {
     font-size: 13px;
     font-family: "Poppins", sans-serif;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+  }
+  footer .footerLeft .phone::before {
+    left: 2px;
+    top: 1px;
   }
   footer .footerLeft .email {
-    font-size: 13px;
-    margin-bottom: 40px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+  }
+  footer .footerLeft .email::before {
+    left: 2px;
+    top: 1px;
   }
   footer .footerLeft .socialLinks {
-    width: 100px;
+    width: 105px;
   }
   footer .footerLeft .socialLinks .linkBox {
-    width: 24px;
-    height: 24px;
+    width: 23px;
+    height: 23px;
   }
   footer .footerLeft .socialLinks .linkBox svg {
     width: 15px;
     height: 15px;
   }
+  footer .footerLeft .socialLinks .facebookBox {
+    padding-left: 6px;
+  }
+  footer .footerLeft .socialLinks .facebookBox svg {
+    width: 100%;
+    height: 100%;
+  }
   footer .footerRight {
     width: 100%;
     padding-left: 0;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
   }
   footer .footerRight h2 {
     font-size: 20px;
+    margin-bottom: 17px;
   }
   footer .footerRight p {
     width: 100%;
-    font-size: 13px;
+    font-size: 14px;
+    padding-right: 10px;
+    margin-bottom: 35px;
   }
   footer .footerRight .email {
     display: flex;
@@ -553,7 +611,7 @@ footer .footerRight .email button {
   footer .footerRight .email input {
     display: block;
     width: 100%;
-    height: 44px;
+    height: 46px;
     margin-right: 0px;
     margin-bottom: 15px;
   }

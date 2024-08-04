@@ -33,7 +33,7 @@
     text-decoration: none;
     color: white;
     background: $pink;
-    box-shadow: 0 5px 10px hsl(322, 50%, 76%);
+    box-shadow: 0 5px 10px hsl(322, 50%, 76%, 50%);
   }
   .heroImg {
     display: block;
@@ -43,6 +43,7 @@
   .statistics {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
     padding-bottom: 290px;
     div {
       img {
