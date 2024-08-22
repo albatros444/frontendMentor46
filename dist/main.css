@@ -174,61 +174,63 @@ header button:hover {
   padding-left: 100px;
 }
 
-.features .feature {
+.features .featureBox .feature {
   display: flex;
   justify-content: space-between;
 }
-.features .feature h2 {
+.features .featureBox .feature h2 {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   margin-bottom: 20px;
 }
-.features .feature p {
+.features .featureBox .feature p {
   width: 525px;
   line-height: 1.6;
   font-weight: 500;
 }
-.features .feature img {
+.features .featureBox .feature img {
   width: 100%;
 }
-.features .growTogether {
+.features .growTogetherBox {
   background: hsl(207, 100%, 98%);
 }
-.features .growTogether__left {
+.features .growTogetherBox .growTogether__left {
   flex-shrink: 0;
   width: 50%;
   padding: 220px 130px 140px;
   padding-right: 80px;
 }
-.features .growTogether__right {
+.features .growTogetherBox .growTogether__right {
   padding: 70px 130px 40px 110px;
   padding-left: 60px;
 }
-.features .flowingConversations {
-  padding: 240px 0px 150px;
+.features .conversationsBox {
   background: top/contain url(/images/bg-section-bottom-desktop-1.svg) no-repeat, bottom/contain url(/images/bg-section-top-desktop-2.svg) no-repeat;
 }
-.features .flowingConversations__left {
+.features .conversationsBox .flowingConversations {
+  padding: 240px 0px 150px;
+}
+.features .conversationsBox .flowingConversations__left {
   padding: 110px 100px 110px 130px;
   padding-right: 60px;
 }
-.features .flowingConversations__right {
+.features .conversationsBox .flowingConversations__right {
   flex-shrink: 0;
   width: 50%;
   padding: 130px;
   padding-left: 80px;
   margin-top: 100px;
 }
-.features .yourUsers {
+.features .yourUsersBox {
   background: hsl(207, 100%, 98%);
 }
-.features .yourUsers__left {
+.features .yourUsersBox .yourUsers__left {
   flex-shrink: 0;
   width: 50%;
   padding: 110px;
   margin-top: 30px;
 }
-.features .yourUsers__right {
+.features .yourUsersBox .yourUsers__right {
   padding: 40px 130px 30px 60px;
 }
 
@@ -412,7 +414,7 @@ footer .footerRight .emailForm button {
   width: 160px;
   height: 48px;
   border: none;
-  border-radius: 7px;
+  border-radius: 5px;
   outline: inherit;
   cursor: pointer;
   font-size: 16px;
@@ -434,14 +436,16 @@ footer .footerRight .formInvalid input {
   border: 1px solid hsl(0, 100%, 63%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   header {
     align-items: center;
-    padding: 25px 25px;
+    padding: 6.6666666667vw;
     margin-bottom: 55px;
   }
   header img {
-    height: 16px;
+    height: 4.2666666667vw;
+    min-height: 16px;
+    max-height: 25px;
   }
   header button {
     width: 80px;
@@ -505,6 +509,7 @@ footer .footerRight .formInvalid input {
     margin-left: 4px;
   }
   .hero .statistics .statistics__right p:nth-child(3) {
+    font-family: "Poppins", sans-serif;
     font-size: 13px;
     margin: -7px auto 0;
     padding-right: 10px;
@@ -520,45 +525,47 @@ footer .footerRight .formInvalid input {
   .hero .statistics__left p:nth-child(2) {
     font-size: 47px;
   }
-  .features .feature {
+  .features .featureBox .feature {
     flex-direction: column;
   }
-  .features .feature h2 {
+  .features .featureBox .feature h2 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .features .feature p {
+  .features .featureBox .feature p {
     width: 100%;
     font-size: 14px;
     letter-spacing: -0.01em;
     font-weight: 500;
   }
-  .features .growTogether {
+  .features .growTogetherBox .growTogether {
     padding-bottom: 25px;
   }
-  .features .growTogether__left {
+  .features .growTogetherBox .growTogether__left {
     order: 2;
     padding: 30px;
     width: 100%;
     text-align: center;
   }
-  .features .growTogether__right {
+  .features .growTogetherBox .growTogether__right {
     padding: 90px 60px 40px;
   }
-  .features .flowingConversations {
-    padding: 140px 0px 190px;
+  .features .conversationsBox {
     background: top/contain url(/images/bg-section-bottom-mobile-1.svg) no-repeat, bottom/contain url(/images/bg-section-top-mobile-2.svg) no-repeat;
   }
-  .features .flowingConversations__left {
+  .features .conversationsBox .flowingConversations {
+    padding: 140px 0px 190px;
+  }
+  .features .conversationsBox .flowingConversations__left {
     padding: 50px 55px;
   }
-  .features .flowingConversations__right {
+  .features .conversationsBox .flowingConversations__right {
     margin-top: 0px;
     padding: 30px;
     width: 100%;
     text-align: center;
   }
-  .features .yourUsers__left {
+  .features .yourUsersBox .yourUsers__left {
     order: 2;
     padding: 0;
     margin-top: 0px;
@@ -566,7 +573,7 @@ footer .footerRight .formInvalid input {
     width: 100%;
     text-align: center;
   }
-  .features .yourUsers__right {
+  .features .yourUsersBox .yourUsers__right {
     padding: 20px 55px 50px;
   }
   .cta {
@@ -582,7 +589,7 @@ footer .footerRight .formInvalid input {
     font-size: 12px;
   }
   footer {
-    padding: 60px 27px 0px;
+    padding: 60px 7.2vw 0px;
     flex-direction: column;
   }
   footer .footerLeft {
@@ -656,15 +663,76 @@ footer .footerRight .formInvalid input {
     flex-direction: column;
     align-items: flex-end;
   }
-  footer .footerRight .emailForm input {
+  footer .footerRight .emailForm .inputBox {
+    width: 100%;
+    max-width: 350px;
+    padding-bottom: 15px;
+  }
+  footer .footerRight .emailForm .inputBox input {
     display: block;
     width: 100%;
     height: 46px;
+    margin-bottom: 0;
     margin-right: 0px;
-    margin-bottom: 15px;
   }
-  footer .footerRight .emailForm button {
+  footer .footerRight .emailForm .inputBox button {
     display: block;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 900px) {
+  header button {
+    width: 110px;
+    height: 30px;
+    margin-right: 0;
+    padding-bottom: 1px;
+    font-size: 12px;
+  }
+  .hero {
+    padding: 10vw;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero .heroText {
+    font-size: 16px;
+  }
+  .hero button {
+    width: 230px;
+    height: 47px;
+    font-size: 15px;
+  }
+  .hero .heroImg {
+    margin-bottom: 50px;
+  }
+  .hero .statistics div p:nth-child(2) {
+    font-size: 72px;
+  }
+  .hero .statistics .statistics__right p:nth-child(2) {
+    font-size: 64px;
+  }
+  .features .featureBox .feature {
+    padding: 0 6.6666666667vw;
+  }
+  .features .featureBox .feature h2 {
+    font-size: 27px;
+  }
+  .features .featureBox .feature p {
+    font-size: 16px;
+  }
+  .features .conversationsBox {
+    padding-top: 90px;
+    padding-bottom: 230px;
+  }
+  .cta {
+    padding: 250px 0 130px;
+  }
+  .cta h2 {
+    font-size: 30px;
+  }
+  .cta button {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
   }
 }
 

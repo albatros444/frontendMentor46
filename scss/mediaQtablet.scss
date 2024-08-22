@@ -1,0 +1,69 @@
+@media screen and (min-width: 450px) and (max-width: 900px) {
+  header {
+    button {
+      width: 110px;
+      height: 30px;
+      margin-right: 0;
+      padding-bottom: 1px;
+      font-size: 12px;
+    }
+  }
+  .hero {
+    padding: pxToVw(370, 37);
+    h1 {
+      font-size: 32px;
+    }
+    .heroText {
+      font-size: 16px;
+    }
+    button {
+      width: 230px;
+      height: 47px;
+      font-size: 15px;
+    }
+    .heroImg {
+      margin-bottom: 50px;
+    }
+    .statistics {
+      div {
+        p:nth-child(2) {
+          font-size: 72px;
+        }
+      }
+      .statistics__right {
+        p:nth-child(2) {
+          font-size: 64px;
+        }
+      }
+    }
+  }
+  .features {
+    .featureBox {
+      .feature {
+        padding: 0 pxToVw(375, 25);
+
+        h2 {
+          font-size: 27px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .conversationsBox {
+      padding-top: 90px;
+      padding-bottom: 230px;
+    }
+  }
+  .cta {
+    padding: 250px 0 130px;
+    h2 {
+      font-size: 30px;
+    }
+    button {
+      width: 250px;
+      height: 50px;
+      font-size: 15px;
+    }
+  }
+}
