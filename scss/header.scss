@@ -23,5 +23,10 @@ header {
     color: $pink;
     background: none;
     box-shadow: 0 0 3px hsl(321, 100%, 88%); ///custom
+    transition: all 0.13s ease-in-out;
+    &:hover {
+      border: 1px solid hsl(321, 100%, 88%); //custom
+      color: hsl(321, 100%, 82%); //custom
+    }
   }
 }

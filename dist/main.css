@@ -88,6 +88,11 @@ header button {
   color: hsl(322, 100%, 66%);
   background: none;
   box-shadow: 0 0 3px hsl(321, 100%, 88%);
+  transition: all 0.13s ease-in-out;
+}
+header button:hover {
+  border: 1px solid hsl(321, 100%, 88%);
+  color: hsl(321, 100%, 82%);
 }
 
 .hero {
@@ -119,13 +124,17 @@ header button {
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.01em;
   text-align: center;
   text-decoration: none;
   color: white;
   background: hsl(322, 100%, 66%);
   box-shadow: 0 5px 10px hsla(322, 50%, 76%, 0.5);
+  transition: all ease-in-out 0.13s;
+}
+.hero button:hover {
+  background: hsl(321, 100%, 78%);
 }
 .hero .heroImg {
   display: block;
@@ -245,12 +254,16 @@ header button {
   cursor: pointer;
   font-family: inherit;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
   color: white;
   background: hsl(322, 100%, 66%);
   box-shadow: 0 5px 10px hsl(322, 50%, 76%);
+  transition: all ease-in-out 0.13s;
+}
+.cta button:hover {
+  background: hsl(321, 100%, 78%);
 }
 
 footer {
@@ -316,7 +329,12 @@ footer .footerLeft .socialLinks .linkBox {
   width: 33px;
   height: 31px;
   border-radius: 3px;
+  cursor: pointer;
   background-color: hsl(207, 100%, 98%);
+  transition: all 0.13s ease-in-out;
+}
+footer .footerLeft .socialLinks .linkBox:hover {
+  background-color: hsl(192, 99%, 49%);
 }
 footer .footerLeft .socialLinks .linkBox svg {
   height: 20px;
@@ -327,6 +345,13 @@ footer .footerLeft .socialLinks .linkBox svg g g {
 }
 footer .footerLeft .socialLinks .instaBox {
   background-color: hsl(192, 100%, 9%);
+}
+footer .footerLeft .socialLinks .instaBox:hover {
+  background-color: hsl(192, 100%, 9%);
+}
+footer .footerLeft .socialLinks .instaBox:hover .instaSVG g g {
+  fill: hsl(192, 99%, 49%);
+  transition: all 0.13s ease-in-out;
 }
 footer .footerLeft .socialLinks .instaBox .instaSVG {
   width: 100%;
@@ -364,7 +389,7 @@ footer .footerRight .emailForm {
 }
 footer .footerRight .emailForm input {
   width: 319px;
-  height: 50px;
+  height: 48px;
   border-radius: 6px;
   padding-left: 15px;
   margin-right: 40px;
@@ -385,7 +410,7 @@ footer .footerRight .emailForm button {
   display: inline-block;
   padding: 0;
   width: 160px;
-  height: 50px;
+  height: 48px;
   border: none;
   border-radius: 7px;
   outline: inherit;
@@ -397,6 +422,10 @@ footer .footerRight .emailForm button {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   background: hsl(322, 100%, 66%);
+  transition: all 0.13s ease-in-out;
+}
+footer .footerRight .emailForm button:hover {
+  background: hsl(321, 100%, 78%);
 }
 footer .footerRight .formInvalid .errorMessage {
   display: block;

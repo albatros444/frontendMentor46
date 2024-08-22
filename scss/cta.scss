@@ -21,11 +21,15 @@
     cursor: pointer;
     font-family: inherit;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
     color: white;
     background: $pink;
     box-shadow: 0 5px 10px hsl(322, 50%, 76%);
+    transition: all ease-in-out 0.13s;
+    &:hover {
+      background: $lPink;
+    }
   }
 }
