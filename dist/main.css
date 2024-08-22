@@ -272,7 +272,7 @@ footer .footerLeft .description {
   width: 305px;
   margin-bottom: 30px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.65;
 }
@@ -351,24 +351,37 @@ footer .footerRight h2 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-footer .footerRight p {
-  width: 335px;
+footer .footerRight .rightText {
+  width: 340px;
   margin-bottom: 37px;
   font-size: 14px;
+  font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 1.7;
 }
-footer .footerRight .email input {
+footer .footerRight .emailForm {
+  display: flex;
+}
+footer .footerRight .emailForm input {
   width: 319px;
   height: 50px;
-  border-radius: 7px;
+  border-radius: 6px;
   padding-left: 15px;
-  margin-right: 35px;
+  margin-right: 40px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 500;
   color: hsl(192, 100%, 9%);
 }
-footer .footerRight .email button {
+footer .footerRight .emailForm .errorMessage {
+  display: none;
+  width: 300px;
+  color: hsl(0, 100%, 63%);
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+footer .footerRight .emailForm button {
   display: inline-block;
   padding: 0;
   width: 160px;
@@ -384,6 +397,12 @@ footer .footerRight .email button {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   background: hsl(322, 100%, 66%);
+}
+footer .footerRight .formInvalid .errorMessage {
+  display: block;
+}
+footer .footerRight .formInvalid input {
+  border: 1px solid hsl(0, 100%, 63%);
 }
 
 @media screen and (max-width: 600px) {
@@ -597,25 +616,25 @@ footer .footerRight .email button {
     font-size: 20px;
     margin-bottom: 17px;
   }
-  footer .footerRight p {
+  footer .footerRight .rightText {
     width: 100%;
     font-size: 14px;
     padding-right: 10px;
     margin-bottom: 35px;
   }
-  footer .footerRight .email {
+  footer .footerRight .emailForm {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-  footer .footerRight .email input {
+  footer .footerRight .emailForm input {
     display: block;
     width: 100%;
     height: 46px;
     margin-right: 0px;
     margin-bottom: 15px;
   }
-  footer .footerRight .email button {
+  footer .footerRight .emailForm button {
     display: block;
   }
 }

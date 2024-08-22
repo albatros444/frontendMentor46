@@ -15,7 +15,7 @@ footer {
       width: 305px;
       margin-bottom: 30px;
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 0.03em;
       line-height: 1.65;
     }
@@ -101,23 +101,34 @@ footer {
       text-transform: uppercase;
       margin-bottom: 20px;
     }
-    p {
-      width: 335px;
+    .rightText {
+      width: 340px;
       margin-bottom: 37px;
       font-size: 14px;
+      font-weight: 500;
       letter-spacing: 0.01em;
       line-height: 1.7;
     }
-    .email {
+    .emailForm {
+      display: flex;
       input {
         width: 319px;
         height: 50px;
-        border-radius: 7px;
+        border-radius: 6px;
         padding-left: 15px;
-        margin-right: 35px;
+        margin-right: 40px;
+        margin-bottom: 5px;
         font-size: 14px;
         font-weight: 500;
         color: $vdCyan;
+      }
+      .errorMessage {
+        display: none;
+        width: 300px;
+        color: $lRed;
+        font-size: 13px;
+        letter-spacing: -0.02em;
+        font-weight: 400;
       }
       button {
         display: inline-block;
@@ -135,6 +146,14 @@ footer {
         text-decoration: none;
         color: $white;
         background: $pink;
+      }
+    }
+    .formInvalid {
+      .errorMessage {
+        display: block;
+      }
+      input {
+        border: 1px solid $lRed;
       }
     }
   }
