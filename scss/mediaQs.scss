@@ -104,6 +104,7 @@
           margin: 0 auto;
           font-size: 14px;
           letter-spacing: -0.01em;
+          line-height: 1.5;
           font-weight: 500;
         }
         img {
@@ -158,7 +159,7 @@
     }
   }
   .cta {
-    padding: 170px 0 ptw(1440, 210);
+    padding: 170px 0 ptw(375, 210);
     background: top / contain url(/images/bg-section-bottom-mobile-2.svg)
         no-repeat,
       bottom/contain url(/images/bg-footer-top-mobile.svg) no-repeat;
