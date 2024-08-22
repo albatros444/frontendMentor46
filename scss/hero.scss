@@ -1,8 +1,10 @@
 .hero {
   background: bottom / contain url(/images/bg-section-top-desktop-1.svg)
     no-repeat;
+  // padding: 0 pxToVw(1440, 70);
   h1 {
     margin-bottom: 20px;
+    padding: 0 70px;
     font-family: $poppins;
     font-size: 48px;
     font-weight: 700;
@@ -42,13 +44,17 @@
   .heroImg {
     display: block;
     width: 72%;
+    max-width: 1100px;
     margin: 0 auto 120px; //210px
   }
   .statistics {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    margin: 0 auto;
     padding-bottom: 290px;
+    max-width: 1300px;
+
     div {
       img {
         padding-left: 10px;

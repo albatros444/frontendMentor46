@@ -8,8 +8,9 @@ $vpBlue: hsl(207, 100%, 98%);
 $white: hsl(0, 0%, 100%);
 
 /////
-// $marginDesktop: 0 90px;
-@function pxToVw($scrnWidth, $pxls) {
+
+// pixels to vw
+@function ptw($scrnWidth, $pxls) {
   $res: calc($pxls/$scrnWidth * 100vw);
   @return $res;
 }

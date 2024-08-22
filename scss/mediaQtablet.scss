@@ -9,7 +9,7 @@
     }
   }
   .hero {
-    padding: pxToVw(370, 37);
+    padding: ptw(370, 37);
     h1 {
       font-size: 32px;
     }
@@ -40,7 +40,7 @@
   .features {
     .featureBox {
       .feature {
-        padding: 0 pxToVw(375, 25);
+        padding: 0 ptw(375, 25);
 
         h2 {
           font-size: 27px;

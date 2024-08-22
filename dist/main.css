@@ -65,7 +65,7 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 77px;
+  padding: 5.3472222222vw;
   margin-bottom: 155px;
 }
 header img {
@@ -100,6 +100,7 @@ header button:hover {
 }
 .hero h1 {
   margin-bottom: 20px;
+  padding: 0 70px;
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -139,13 +140,16 @@ header button:hover {
 .hero .heroImg {
   display: block;
   width: 72%;
+  max-width: 1100px;
   margin: 0 auto 120px;
 }
 .hero .statistics {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  margin: 0 auto;
   padding-bottom: 290px;
+  max-width: 1300px;
 }
 .hero .statistics div img {
   padding-left: 10px;
@@ -174,9 +178,15 @@ header button:hover {
   padding-left: 100px;
 }
 
+.features .featureBox {
+  display: flex;
+  justify-content: center;
+}
 .features .featureBox .feature {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 .features .featureBox .feature h2 {
   font-family: "Poppins", sans-serif;
@@ -184,7 +194,7 @@ header button:hover {
   margin-bottom: 20px;
 }
 .features .featureBox .feature p {
-  width: 525px;
+  max-width: 525px;
   line-height: 1.6;
   font-weight: 500;
 }
@@ -197,29 +207,29 @@ header button:hover {
 .features .growTogetherBox .growTogether__left {
   flex-shrink: 0;
   width: 50%;
-  padding: 220px 130px 140px;
-  padding-right: 80px;
+  padding: 13.1944444444vw 9.0277777778vw 9.7222222222vw;
+  padding-right: 5.5555555556vw;
 }
 .features .growTogetherBox .growTogether__right {
-  padding: 70px 130px 40px 110px;
-  padding-left: 60px;
+  padding: 4.8611111111vw 9.0277777778vw 2.7777777778vw 7.6388888889vw;
+  padding-left: 4.1666666667vw;
 }
 .features .conversationsBox {
   background: top/contain url(/images/bg-section-bottom-desktop-1.svg) no-repeat, bottom/contain url(/images/bg-section-top-desktop-2.svg) no-repeat;
 }
 .features .conversationsBox .flowingConversations {
-  padding: 240px 0px 150px;
+  padding: 16.6666666667vw 0px 10.4166666667vw;
 }
 .features .conversationsBox .flowingConversations__left {
-  padding: 110px 100px 110px 130px;
-  padding-right: 60px;
+  padding: 7.6388888889vw 6.9444444444vw 7.6388888889vw 9.0277777778vw;
+  padding-right: 4.1666666667vw;
 }
 .features .conversationsBox .flowingConversations__right {
   flex-shrink: 0;
   width: 50%;
-  padding: 130px;
-  padding-left: 80px;
-  margin-top: 100px;
+  padding: 5.5555555556vw;
+  padding-left: 5.5555555556vw;
+  margin-top: 2.7777777778vw;
 }
 .features .yourUsersBox {
   background: hsl(207, 100%, 98%);
@@ -227,15 +237,15 @@ header button:hover {
 .features .yourUsersBox .yourUsers__left {
   flex-shrink: 0;
   width: 50%;
-  padding: 110px;
+  padding: 7.6388888889vw;
   margin-top: 30px;
 }
 .features .yourUsersBox .yourUsers__right {
-  padding: 40px 130px 30px 60px;
+  padding: 2.7777777778vw 9.0277777778vw 2.0833333333vw 4.1666666667vw;
 }
 
 .cta {
-  padding: 300px 0 250px;
+  padding: 20.8333333333vw 0 17.3611111111vw;
   background: top/contain url(/images/bg-section-bottom-desktop-2.svg) no-repeat, bottom/contain url(/images/bg-footer-top-desktop.svg) no-repeat;
 }
 .cta h2 {
@@ -271,7 +281,7 @@ header button:hover {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 120px 100px 100px 120px;
+  padding: 120px 6.9444444444vw 6.9444444444vw 8.3333333333vw;
   background-color: hsl(192, 100%, 9%);
 }
 footer p {
@@ -284,7 +294,7 @@ footer .footerLeft img {
   margin-bottom: 20px;
 }
 footer .footerLeft .description {
-  width: 305px;
+  max-width: 305px;
   margin-bottom: 30px;
   font-size: 13px;
   font-weight: 500;
@@ -388,8 +398,12 @@ footer .footerRight .rightText {
 }
 footer .footerRight .emailForm {
   display: flex;
+  flex-wrap: wrap;
 }
-footer .footerRight .emailForm input {
+footer .footerRight .emailForm .inputBox {
+  margin-bottom: 10px;
+}
+footer .footerRight .emailForm .inputBox input {
   width: 319px;
   height: 48px;
   border-radius: 6px;
@@ -400,7 +414,7 @@ footer .footerRight .emailForm input {
   font-weight: 500;
   color: hsl(192, 100%, 9%);
 }
-footer .footerRight .emailForm .errorMessage {
+footer .footerRight .emailForm .inputBox .errorMessage {
   display: none;
   width: 300px;
   color: hsl(0, 100%, 63%);
@@ -429,11 +443,11 @@ footer .footerRight .emailForm button {
 footer .footerRight .emailForm button:hover {
   background: hsl(321, 100%, 78%);
 }
-footer .footerRight .formInvalid .errorMessage {
-  display: block;
-}
-footer .footerRight .formInvalid input {
+footer .footerRight .formInvalid .inputBox input {
   border: 1px solid hsl(0, 100%, 63%);
+}
+footer .footerRight .formInvalid .inputBox .errorMessage {
+  display: block;
 }
 
 @media screen and (max-width: 900px) {
@@ -459,6 +473,7 @@ footer .footerRight .formInvalid input {
     background: bottom/contain url(/images/bg-section-top-mobile-1.svg) no-repeat;
   }
   .hero h1 {
+    padding: 0;
     font-size: 24px;
   }
   .hero .heroText {
@@ -472,7 +487,7 @@ footer .footerRight .formInvalid input {
     height: 40px;
     margin-bottom: 100px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
   }
   .hero .heroImg {
     width: 100%;
@@ -534,6 +549,7 @@ footer .footerRight .formInvalid input {
   }
   .features .featureBox .feature p {
     width: 100%;
+    margin: 0 auto;
     font-size: 14px;
     letter-spacing: -0.01em;
     font-weight: 500;
@@ -577,7 +593,7 @@ footer .footerRight .formInvalid input {
     padding: 20px 55px 50px;
   }
   .cta {
-    padding: 170px 0 210px;
+    padding: 170px 0 14.5833333333vw;
     background: top/contain url(/images/bg-section-bottom-mobile-2.svg) no-repeat, bottom/contain url(/images/bg-footer-top-mobile.svg) no-repeat;
   }
   .cta h2 {
@@ -587,6 +603,7 @@ footer .footerRight .formInvalid input {
     width: 53%;
     height: 40px;
     font-size: 12px;
+    font-weight: 700;
   }
   footer {
     padding: 60px 7.2vw 0px;
@@ -666,7 +683,7 @@ footer .footerRight .formInvalid input {
   footer .footerRight .emailForm .inputBox {
     width: 100%;
     max-width: 350px;
-    padding-bottom: 15px;
+    padding-bottom: 6px;
   }
   footer .footerRight .emailForm .inputBox input {
     display: block;

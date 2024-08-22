@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 120px 100px 100px 120px;
+  padding: 120px ptw(1440, 100) ptw(1440, 100) ptw(1440, 120);
   background-color: $vdCyan;
   p {
     color: $vpBlue;
@@ -12,7 +12,7 @@ footer {
       margin-bottom: 20px;
     }
     .description {
-      width: 305px;
+      max-width: 305px;
       margin-bottom: 30px;
       font-size: 13px;
       font-weight: 500;
@@ -127,24 +127,28 @@ footer {
     }
     .emailForm {
       display: flex;
-      input {
-        width: 319px;
-        height: 48px;
-        border-radius: 6px;
-        padding-left: 15px;
-        margin-right: 40px;
-        margin-bottom: 5px;
-        font-size: 14px;
-        font-weight: 500;
-        color: $vdCyan;
-      }
-      .errorMessage {
-        display: none;
-        width: 300px;
-        color: $lRed;
-        font-size: 13px;
-        letter-spacing: -0.02em;
-        font-weight: 400;
+      flex-wrap: wrap;
+      .inputBox {
+        margin-bottom: 10px;
+        input {
+          width: 319px;
+          height: 48px;
+          border-radius: 6px;
+          padding-left: 15px;
+          margin-right: 40px;
+          margin-bottom: 5px;
+          font-size: 14px;
+          font-weight: 500;
+          color: $vdCyan;
+        }
+        .errorMessage {
+          display: none;
+          width: 300px;
+          color: $lRed;
+          font-size: 13px;
+          letter-spacing: -0.02em;
+          font-weight: 400;
+        }
       }
       button {
         display: inline-block;
@@ -169,11 +173,13 @@ footer {
       }
     }
     .formInvalid {
-      .errorMessage {
-        display: block;
-      }
-      input {
-        border: 1px solid $lRed;
+      .inputBox {
+        input {
+          border: 1px solid $lRed;
+        }
+        .errorMessage {
+          display: block;
+        }
       }
     }
   }
